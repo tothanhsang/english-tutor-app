@@ -3,11 +3,18 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Design tokens aligned with spec.md */
+  --primary: #2563EB; /* brand primary */
+  --accent: #F59E0B;  /* accent */
+  --muted: #6b7280;   /* gray-500 */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -24,3 +31,8 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Utility helpers to use tokens */
+.text-muted-foreground { color: var(--color-muted-foreground); }
+.btn-primary { background-color: var(--color-primary); color: white; }
+.btn-accent { background-color: var(--color-accent); color: black; }

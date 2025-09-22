@@ -1,0 +1,214 @@
+{
+  "appName": "English Q&A Tutor",
+  "tokens": {
+    "colors": {
+      "primary": "#2563EB",
+      "accent": "#F59E0B",
+      "foreground": "#171717",
+      "background": "#ffffff",
+      "muted": "#6b7280"
+    },
+    "typography": {
+      "heading": "Inter",
+      "body": "Sans"
+    },
+    "spacingScale": [
+      4,
+      8,
+      12,
+      16,
+      24,
+      32
+    ]
+  },
+  "pages": [
+    {
+      "id": "landing",
+      "name": "Landing",
+      "route": "/",
+      "sections": [
+        {
+          "id": "landing_sec_1",
+          "name": "hero",
+          "components": []
+        },
+        {
+          "id": "landing_sec_2",
+          "name": "features(3)",
+          "components": []
+        },
+        {
+          "id": "landing_sec_3",
+          "name": "CTA",
+          "components": []
+        }
+      ]
+    },
+    {
+      "id": "auth",
+      "name": "Auth",
+      "route": "/auth",
+      "sections": [
+        {
+          "id": "auth_sec_1",
+          "name": "sign in",
+          "components": []
+        },
+        {
+          "id": "auth_sec_2",
+          "name": "sign up",
+          "components": []
+        }
+      ]
+    },
+    {
+      "id": "onboarding",
+      "name": "Onboarding",
+      "route": "/onboarding",
+      "sections": [
+        {
+          "id": "onboarding_sec_1",
+          "name": "select level(A1–B2)",
+          "components": []
+        },
+        {
+          "id": "onboarding_sec_2",
+          "name": "goals",
+          "components": []
+        },
+        {
+          "id": "onboarding_sec_3",
+          "name": "schedule",
+          "components": []
+        }
+      ]
+    },
+    {
+      "id": "dashboard",
+      "name": "Dashboard",
+      "route": "/dashboard",
+      "sections": [
+        {
+          "id": "dashboard_sec_1",
+          "name": "progress summary",
+          "components": []
+        },
+        {
+          "id": "dashboard_sec_2",
+          "name": "recommended lessons (cards)",
+          "components": []
+        }
+      ]
+    },
+    {
+      "id": "lesson_player",
+      "name": "Lesson Player",
+      "route": "/lesson-player",
+      "sections": [
+        {
+          "id": "lesson player_sec_1",
+          "name": "Q&A panel (chat layout)",
+          "components": []
+        },
+        {
+          "id": "lesson player_sec_2",
+          "name": "prompt suggestions",
+          "components": []
+        },
+        {
+          "id": "lesson player_sec_3",
+          "name": "hints",
+          "components": []
+        },
+        {
+          "id": "lesson player_sec_4",
+          "name": "submit answer",
+          "components": []
+        }
+      ]
+    },
+    {
+      "id": "question_bank",
+      "name": "Question Bank",
+      "route": "/question-bank",
+      "sections": [
+        {
+          "id": "question bank_sec_1",
+          "name": "search",
+          "components": []
+        },
+        {
+          "id": "question bank_sec_2",
+          "name": "filters (topic/level)",
+          "components": []
+        },
+        {
+          "id": "question bank_sec_3",
+          "name": "list",
+          "components": []
+        },
+        {
+          "id": "question bank_sec_4",
+          "name": "pagination",
+          "components": []
+        }
+      ]
+    },
+    {
+      "id": "progress",
+      "name": "Progress",
+      "route": "/progress",
+      "sections": [
+        {
+          "id": "progress_sec_1",
+          "name": "charts (weekly",
+          "components": []
+        },
+        {
+          "id": "progress_sec_2",
+          "name": "monthly)",
+          "components": []
+        },
+        {
+          "id": "progress_sec_3",
+          "name": "streaks",
+          "components": []
+        }
+      ]
+    },
+    {
+      "id": "settings",
+      "name": "Settings",
+      "route": "/settings",
+      "sections": [
+        {
+          "id": "settings_sec_1",
+          "name": "profile",
+          "components": []
+        },
+        {
+          "id": "settings_sec_2",
+          "name": "notifications",
+          "components": []
+        },
+        {
+          "id": "settings_sec_3",
+          "name": "language",
+          "components": []
+        }
+      ]
+    },
+    {
+      "id": "admin_optional_",
+      "name": "Admin (optional)",
+      "route": "/admin-optional",
+      "sections": [
+        {
+          "id": "admin (optional)_sec_1",
+          "name": "content CRUD",
+          "components": []
+        }
+      ]
+    }
+  ]
+}

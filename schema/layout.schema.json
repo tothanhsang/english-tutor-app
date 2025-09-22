@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AppLayout",
+  "type": "object",
+  "required": ["appName", "pages"],
+  "properties": {
+    "appName": { "type": "string" },
+    "tokens": {
+      "type": "object",
+      "properties": {
+        "colors": {
+          "type": "object",
+          "properties": {
+            "primary": { "type": "string" },
+            "accent": { "type": "string" },
+            "foreground": { "type": "string" },
+            "background": { "type": "string" },
+            "muted": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "spacingScale": {
+          "type": "array",
+          "items": { "type": "number" }
+        },
+        "typography": {
+          "type": "object",
+          "properties": {
+            "heading": { "type": "string" },
+            "body": { "type": "string" }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "route"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "route": { "type": "string" },
+          "sections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "name"],
+              "properties": {
+                "id": { "type": "string" },
+                "name": { "type": "string" },
+                "components": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["type", "name"],
+                    "properties": {
+                      "type": { "type": "string" },
+                      "name": { "type": "string" },
+                      "props": { "type": "object", "additionalProperties": true }
+                    },
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}
